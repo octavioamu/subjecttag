@@ -12,7 +12,7 @@ if (tags) {
   $.each($ul.children(), function(i, li) {
     //clientes[i] = $(li).html();
     var html = $(li).html();
-    $('#clientes ul').append('<li><a href="mailto: ?subject=['+html+']" target="_blank"><i class="fa fa-thumb-tack"></i> '+html+'</a></li>');
+    $('#clientes ul').append('<li><a href="mailto: ?subject=['+html+']" target="_blank"><i class="fa fa-thumb-tack"></i> ['+html+']</a></li>');
   });
 } else {
   $('#clientes ul').append(' <li>Sem tags</li>');
