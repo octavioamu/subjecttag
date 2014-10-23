@@ -7,12 +7,17 @@ var clientes = [];
       // console.log(tabUrl)
 
 $ul.html(tags);
+if (tags) {
 
-$.each($ul.children(), function(i, li) {
-  //clientes[i] = $(li).html();
-  var html = $(li).html();
-  $('#clientes ul').append('<li class="icon-cliente"><a href="mailto: ?subject=['+html+']" target="_blank">'+html+'</a></li>');
-});
+  $.each($ul.children(), function(i, li) {
+    //clientes[i] = $(li).html();
+    var html = $(li).html();
+    $('#clientes ul').append('<li><a href="mailto: ?subject=['+html+']" target="_blank"><i class="fa fa-thumb-tack"></i> '+html+'</a></li>');
+  });
+} else {
+  $('#clientes ul').append(' <li>Sem tags</li>');
+
+}
 // mailto:info@example.com?subject='Mi casa'&body=Telefono
 
 /**
