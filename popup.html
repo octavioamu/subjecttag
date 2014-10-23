@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SubjectTag</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript and HTML must be in separate files for security. -->
+    </head>
+    <body>
+
+
+        <!-- Standard <ul> with class of "tabs" -->
+        <ul class="tabs">
+          <!-- Give href an ID value of corresponding "tabs-content" <li>'s -->
+          <li><a class="active" href="#tags">Tags</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+        </ul>
+
+        <!-- Standard <ul> with class of "tabs-content" -->
+        <div class="tabs-content">
+          <!-- Give ID that matches HREF of above anchors -->
+            <div class="active" id="tags">
+                 <ul>
+                    <li class="icon-midia" title="Mídias Sociais.">
+                        <a href="mailto: ?subject=[_mídia] " target='_blank'>[_mídia]</a>
+                    </li>
+                    <li class="icon-motion" title= "Motion Graphics.">
+                        <a href="mailto: ?subject=[_motion] " target='_blank'>[_motion]</a>
+                    </li>
+                    <li class="icon-design" title="Design: inspirações, tipografia, etc.">
+                        <a href="mailto: ?subject=[_design] " target='_blank'>[_design]</a>
+                    </li>
+                    <li class="icon-html" title="Área Front End: HTML, CSS , Javascript e Email-Marketing.">
+                        <a href="mailto: ?subject=[_html] " target='_blank'>[_html]</a>
+                    </li>
+                    <li class="icon-sistema" title="Área de Back End: linguagens de programação, frameworks, mobile apps, etc.">
+                        <a href="mailto: ?subject=[_sistema] " target='_blank'>[_sistema]</a>
+                    </li>
+                    <li class="icon-bolt" title="Empresa: sprints, reuniões, hardware, horários, propostas de melhoria, notícias, pizza day, etc. ">
+                        <a href="mailto: ?subject=[_bolt]" target='_blank'>[_bolt]</a>
+                    </li>
+                    <li class="icon-offtopic" title="Outros assuntos que não se encaixam nas tags acima.">
+                        <a href="mailto: ?subject=[_offTopic]" target='_blank'>[_offTopic]</a>
+                    </li>
+                    <li class="icon-curiosidades" title="Curiosidades.">
+                        <a href="mailto: ?subject=[_curiosidades]" target='_blank'>[_curiosidades]</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="clientes">
+                <ul>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <script src="jquery.js"></script>
+        <script src="popup.js"></script>
+
+    </body>
+</html>
