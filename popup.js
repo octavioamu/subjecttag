@@ -4,7 +4,7 @@ var $ul = $('<ul />');
 var clientes = [];
 
 
-      console.log(tabUrl)
+      // console.log(tabUrl)
 
 $ul.html(tags);
 

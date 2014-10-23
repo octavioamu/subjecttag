@@ -1,4 +1,4 @@
-;(function($) {
+$(function() {
 
     $('#lista').on('keyup', function() {
         localStorage.setItem('dados', $('#lista').html());
@@ -13,4 +13,4 @@
         window.location = window.location;
     });
 
-})(jQuery);
+});
